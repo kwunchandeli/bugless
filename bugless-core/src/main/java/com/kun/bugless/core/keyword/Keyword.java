@@ -1,5 +1,15 @@
 package com.kun.bugless.core.keyword;
 
-public interface Keyword {
-	public Object exucute(Object[] arguments);
+public class Keyword implements IKeyword {
+
+	public Object excute(Object o, Object[] arguments) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getDocumentation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
