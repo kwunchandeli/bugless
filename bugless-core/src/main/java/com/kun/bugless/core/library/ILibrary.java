@@ -5,6 +5,7 @@ import java.util.List;
 import com.kun.bugless.core.keyword.KeywordInfo;
 
 public interface ILibrary {
+	public String getLibraryClasString();
 	public String getLibraryName();
 	public String[] getKeywordNames();
 	public boolean containKeyword(String keywordName);

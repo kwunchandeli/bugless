@@ -40,8 +40,8 @@ public class LibraryFactory implements ILibaryFactory {
 			Iterator<String> it = prop.stringPropertyNames().iterator();
 			while (it.hasNext()) {
 				String key = it.next();
-				Library library = new Library(key);
 				String classNameString = prop.getProperty(key);
+				Library library = new Library(key,classNameString);
 				Class clazz = Class.forName(classNameString);
 				Method[] methods = clazz.getMethods();
 				for (Method m : methods) {
@@ -64,6 +64,10 @@ public class LibraryFactory implements ILibaryFactory {
 		}
 	}
 
+	public ILibrary getLibrary(String libraryName){
+		return libraryMap.get(libraryName);
+	}
+	
 	public String[] getLibaryNames() {
 		Set<String> set = libraryMap.keySet();
 		return set.toArray(new String[set.size()]);

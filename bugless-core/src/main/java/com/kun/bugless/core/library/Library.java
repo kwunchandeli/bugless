@@ -7,16 +7,26 @@ import com.kun.bugless.core.keyword.KeywordInfo;
 
 public class Library implements ILibrary {
 	private String libraryNameString;
+	private String libraryClasString;
 	private List<KeywordInfo> keywords = new ArrayList<KeywordInfo>();
 
-	public Library(String libraryNameString) {
+	public Library(String libraryNameString,String libraryClasString) {
 		this.libraryNameString = libraryNameString;
+		this.libraryClasString = libraryClasString;
 	}
 
 	public String getLibraryName() {
 		return this.libraryNameString;
 	}
 	
+	public String getLibraryClasString() {
+		return libraryClasString;
+	}
+
+	public void setLibraryClasString(String libraryClasString) {
+		this.libraryClasString = libraryClasString;
+	}
+
 	public List<String> getKeywordList(){
 		List<String> list = new ArrayList<String>();
 		for(KeywordInfo info : keywords){
