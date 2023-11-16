@@ -5,7 +5,7 @@
 	<artifactId>bugless-Selenium2Library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<selenium.version>3.8.1</selenium.version>
+		<selenium.version>4.14.1</selenium.version>
 		<juit.version>4.4</juit.version>
 		<bugless-core.version>0.0.1-SNAPSHOT</bugless-core.version>
 	</properties>
@@ -27,5 +27,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<build />
+	<build/>
 </project>
